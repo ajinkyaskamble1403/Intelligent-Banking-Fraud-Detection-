@@ -24,7 +24,7 @@ SELECT
     a.account_id,
     a.account_number,
     at.account_type_name,
-    ast.account_status_name,
+    ast.status_name AS account_status,
     a.balance,
     a.opened_date,
 
@@ -139,7 +139,9 @@ SELECT
     b.branch_name,
 
     l.start_date,
-    l.end_date
+    l.end_date,
+
+    l.loan_status
 
 FROM loan l
 
