@@ -24,7 +24,7 @@ ON CONFLICT (status_name) DO NOTHING;
 
 
 INSERT INTO merchant_category
-(merchant_category_name, description)
+(category_name, description)
 
 VALUES
 ('RETAIL', 'Retail stores'),
